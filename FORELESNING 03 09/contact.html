@@ -25,7 +25,7 @@
             <label for="navn">Navn:</label>
             <input type="text" name="navn" placeholder="Lars Joakim" id="navn" required>
             <label for="epost">Epost:</label>
-            <input type="email" name="epost" placeholder="Jegerglad123@gmail.com" id="epost" required>
+            <input type="email" name="epost" placeholder="Jegerglad123@gmail.com" id="epost" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
             <label for="melding">Melding:</label>
             <textarea name="melding" id="melding" cols="30" rows="10" placeholder="Skriv din melding her" required></textarea>
             <input type="submit" value="Send">

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e00303;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            color: #cb0303;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>Planeter i solsystemet</caption>
+            <tr>
+                <th colspan="2"></th>
+                <th>Navn</th>
+                <th>Masse (Jorden = 1)</th>
+                <th>Diameter</th>
+                <th>Tetthet</th>
+                <th>Tyngdekraften</th>
+                <th>Antall Måner</th>
+            </tr>
+            <tr>
+                <th rowspan="4" colspan="2">Terrestiske Planeter</th>
+                <td>Merkur</td>
+                <td>0.055</td>
+                <td>4879 km</td>
+                <td>5,427 g/cm³</td>
+                <td>0,38 g</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>0.815</td>
+                <td>12104 km</td>
+                <td>5,243 g/cm³</td>
+                <td>0,91 g</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Jorden</td>
+                <td>1</td>
+                <td>12756 km</td>
+                <td>5,513 g/cm³</td>
+                <td>1 g</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>0.107</td>
+                <td>6779 km</td>
+                <td>3,933 g/cm³</td>
+                <td>0,38 g</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th rowspan="4" colspan="1">Jovianske planeter</th>
+                <th rowspan="2 colspan="1">Gasskjemper</th>
+                <td>Jupiter</td>
+                <td>317.8</td>
+                <td>139822 km</td>
+                <td>1,326 g/cm³</td>
+                <td>2,36 g</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>95.2</td>
+                <td>116464 km</td>
+                <td>0,687 g/cm³</td>
+                <td>0,93 g</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="1">Iskjemper</th>
+                <td>Uranus</td>
+                <td>14.6</td>
+                <td>50724 km</td>
+                <td>1,27 g/cm³</td>
+                <td>0,89 g</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Neptun</td>
+                <td>17.2</td>
+                <td>49244 km</td>
+                <td>1,638 g/cm³</td>
+                <td>1,12 g</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <th rowspan="1" colspan="2">Dvergplaneter</th>
+                <td>Pluto</td>
+                <td>0.00218</td>
+                <td>2370 km</td>
+                <td>2,03 g/cm³</td>
+                <td>0,06 g</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
