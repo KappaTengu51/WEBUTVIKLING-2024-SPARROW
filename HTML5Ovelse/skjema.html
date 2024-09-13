@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heftig Mal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Validering.html">Validering</a></li>
+                <li><a href="contact.html">Kontakt oss</a></li>
+                <li><a href="Mal.html">Nettside Mal</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Regristrererererings skjema </h2>
+            <p>SKjema for å regristrerere deg</p>
+            <form method="post" action="">
+                <label for="navn">Navn:</label>
+                <input type="text" name="navn" placeholder="Lars Joakim" id="navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <label for="epost">Epost:</label>
+                <input type="email" name="epost" placeholder="Jegerglad123@gmail.com" id="epost"  required>
+                <label for="password">Passord:</label>
+                <input type="password" name="password" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <label for="alder">Alder:</label>
+                <input type="number" name="alder" id="alder" min="18" max="99" required>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" name="telefon" id="telefon" pattern="[0-9]{8,12}" required>
+                <label for="fødselsdato">Fødselsdato:</label>
+                <input type="date" name="fødselsdato" id="fødselsdato" max="2023-12-31" required>
+                <label for="kjønn">Kjønn:</label>
+<div>
+    <input type="radio" name="kjønn" id="kjønn_mann" value="mann" required>
+    <label for="kjønn_mann">Mann</label>
+</div>
+<div>
+    <input type="radio" name="kjønn" id="kjønn_kvinne" value="kvinne" required>
+    <label for="kjønn_kvinne">Kvinne</label>
+</div>
+<div>
+    <input type="radio" name="kjønn" id="kjønn_annet" value="annet" required>
+    <label for="kjønn_annet">Annet</label>
+</div>
+<label for="land" required>Land:</label>
+<select name="land" id="land" required>
+    <option value="">Velg et land</option>
+    <option value="norge">Norge</option>
+    <option value="sverige">Sverige</option>
+    <option value="danmark">Danmark</option>
+</select>
+<label for="personvern" required>Personvern:</label>
+<input type="checkbox" name="personvern" id="personvern" required>
+<button type="submit">Send</button>       
+            </form>
+        </article>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>Kristoffer Zvirblis 2024</p>
+        <p><a href="mailto:kristofz@hiof.no">kristofz@hiof.no</a></p>
+    </footer>
+</body>
+</html>
